@@ -1,6 +1,6 @@
 import random
 name=input("PLEASE ENTER YOUR RESPACTIVE NAME = ").upper()
-print(" HELLO",name,"WLCOME TO THE GAME :- *HANGMAN* ")
+print(" HELLO",name,"WLCOME TO THE GAME :- **HANGMAN**")
 imege= ['''
     +---+
     |   |
