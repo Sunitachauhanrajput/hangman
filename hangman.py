@@ -71,15 +71,6 @@ def word():
     return secret_word.lower()
 def hangman():
     turns=9
-    # dificlty_level=int(input("CHOOSE WHICH DIFICLTY LEVEL YOU WANT :- 1 ,2 ,3 "))
-    # while dificlty_level==1 or dificlty_level==2 or dificlty_level==3:
-    #     if dificlty_level==1:
-    #         turn=9
-    #     elif dificlty_level==2:
-    #         turn=7
-    #     elif dificlty_level==3:
-    #         turn=5
-    # turns=turn
     print(" PLEASE TRY TO GUESS RIGHT WORD ,AND YOU HAVE",turns,"ATTEMPT")
     secretword=word()
     tries=len(secretword)
