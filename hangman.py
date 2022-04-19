@@ -1,6 +1,6 @@
 import random
 name=input("PLEASE ENTER YOUR RESPACTIVE NAME = ").upper()
-print(" HELLO",name,"WLCOME TO THE GAME :- **HANGMAN**")
+print(" HELLO",name,"WELCOME TO THE GAME :- **HANGMAN**")
 imege= ['''
     +---+
     |   |
@@ -62,8 +62,8 @@ imege= ['''
 ''']
 
 def word():
-    myfile=open("hangman_words.txt","r")
-    data=myfile.read().split()
+    words="Rose Morigold Jasmine Sunflower Lotus daisy Lahalia Lily Palash Crocus"
+    data=words.split()
     list=[]
     for i in data:
         list.append(i)
@@ -89,7 +89,6 @@ def hangman():
     print(lenwordlist)
     print("              ");
     a=len(secretword)
-    guessmade=""
     guesslist=[]
     while 8>0:
         guess=input("PLEASE GUESS LETTER OF SECRET WORD ")
@@ -105,8 +104,8 @@ def hangman():
                        lenwordlist[i]=guess
                 print("YOUR GUESSING WORD = ", lenwordlist)
                 print("    ")
-                if b==lenwordlist:
-                    print("*****CONGRSTILATION YOU WON  *****")
+            if b==lenwordlist:
+                print("*****CONGRSTILATION YOU WON  *****")
                 break
             elif guess not in secretword:
                 print("OOPS!,YOUR GUESS LETTER ",guess,"NOT IN SECRET WORD AND YOU HAVE LOST ONE CHANCE")
@@ -150,7 +149,6 @@ def play_again():
         else:
             break 
 play_again()
-
 
 
 
